@@ -8,24 +8,23 @@ Score Grade
 If the user enters a value out of range, print a suitable error message and exit. For the test, enter a score of 0.85.
 
 python
-number = raw_input("Enter number:")
-
+s=input("Enter the Score: ")
 try:
-    number = float(number)
+    sr=int(s)
 except:
-    number = -1
-
-if number >= 0.9:
-    print "A"
-elif number >= 0.8:
-    print "B"
-elif number >= 0.7:
-    print "C"
-elif number >= 0.6:
-    print "D"
-elif number < 0.6:
-    print "F"
-else:
-    print "Error!"
-    quit()
-
+    sr=-1
+if sr>10:
+  print('Not in Range')
+elif sr<0:
+  print('Not In Range')
+elif sr>=0.9:
+  print('Your Grade is: A')
+elif sr>=0.8:
+  print('Your Grade is: B')
+elif sr>=0.7:
+  print('Your Grade is: C')
+elif sr>=0.6:
+  print('Your Grade is: D')
+elif sr<0.6:
+  print('Your Grade is: F')
+print('All Done')
